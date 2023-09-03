@@ -1,331 +1,438 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home Page</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="assets/css/style.css" />
-  </head>
 
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-light" id="topnav">
-      <div class="container-fluid">
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div
-          class="collapse navbar-collapse"
-          id="navbarNav"
-          style="float: right"
-        >
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a
-                class="nav-link active text-white"
-                aria-current="page"
-                href="#"
-              >
-                <ion-icon name="share-social-outline"></ion-icon>Follow Us
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active text-white" href="#">
-                <ion-icon name="mail-outline"></ion-icon> demo@gmail.xom
-              </a>
-            </li>
-            <li class="nav-item" id="Request">
-              <a class="nav-link active text-white" href="#">
-                <ion-icon name="layers-outline"></ion-icon>Request for free
-                sample
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Books covered and designs" />
+  <title>Elite Book Design</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="assets/js/tailwind_config.js"></script>
+  <link rel="icon" type="image/x-icon" href="assets/images/Elite_favicon.svg" />
+  <link rel="stylesheet" href="assets/css/fonts.css" />
+  <link rel="stylesheet" href="assets/library/fontawesome/css/all.min.css" />
+  <link rel="stylesheet" href="assets/library/owl/owl.carousel.min.css" />
+  <link rel="stylesheet" href="assets/library/owl/owl.theme.default.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/responsive.css" />
+  <style type="text/tailwindcss">
+    @layer utilities {
+        .btn {
+          @apply font-bold tracking-wide rounded-full uppercase transition duration-500;
+        }
+      }
+    </style>
+</head>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="/" id="logo">
-          <img src="assets/images/logo/Elite_LogoDeign_4.png" width="150px" />
+<body>
+  <!-- loader -->
+  <!-- <div
+      class="lds-ripple fixed w-full h-full z-20 flex justify-center items-center bg-black opacity-80"
+    >
+      <span class="flex h-10 w-10 relative">
+        <span
+          class="animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-75"
+        ></span>
+        <span
+          class="relative inline-flex rounded-full h-10 w-10 bg-sky-500"
+        ></span>
+      </span>
+    </div> -->
+  <!-- top nav -->
+  <nav class="bg-sky-500 w-full px-2 border-b text-sm">
+    <ul class="text-white hidden md:flex justify-end items-center">
+      <li class="group relative p-3 pr-0">
+        <a href="#" class="pr-3 border-r">
+          <i class="fa fa-share-nodes"></i>
+          <span>Follow Us</span>
+          <i class="fa fa-caret-down"></i>
         </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a
-                class="nav-link active mx-2"
-                aria-current="page"
-                href="services.html"
-                >SERVICES</a
-              >
+        <div class="group-hover:block top-9 absolute hidden h-auto flex w-full z-20">
+          <ul class="block w-full bg-white shadow-xl text-black rounded">
+            <li class="p-2 hover:bg-sky-400 hover:text-white">
+              <a href="https://www.facebook.com/profile.php?id=100086756493398&mibextid=ZbWKwL" target="_blank">
+                <i class="fa-brands fa-facebook"></i>
+                Facebook
+              </a>
             </li>
-            <li class="nav-item">
-              <a
-                class="nav-link active mx-2"
-                aria-current="page"
-                href="page_1.html"
-                >BOOK COVER DESIGN</a
-              >
+            <li class="p-2 hover:bg-sky-400 hover:text-white">
+              <a href="https://www.instagram.com/elitebookdesign/?igshid=YmMyMTA2M2Y%3D" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+                <span>Instagram</span>
+              </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link active mx-2" aria-current="page" href="#"
-                >BOOK DISTRIBUTION</a
-              >
+            <li class="p-2 hover:bg-sky-400 hover:text-white">
+              <a href="https://www.linkedin.com/company/elite-book-design/" target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+                <span>Linkedin</span>
+              </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link active mx-2" href="#">PORTFOLIO</a>
+          </ul>
+        </div>
+      </li>
+      <li class="p-3">
+        <a href="mailto:info@elitebookdesign.com">
+          <i class="fa fa-envelope"></i>
+          <span>info@eliteBookdesign.com</span>
+        </a>
+      </li>
+      <li class="bg-black p-3">
+        <a href="eliteForm.html">
+          <i class="fa fa-bookmark"></i>
+          <span>Request FREE Sample</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- header -->
+  <div class="relative wrapper">
+    <header class="flex md:sticky top-0 z-10 items-center w-full py-5 px-10 bg-white inverted">
+      <a href="index.html">
+        <img src="assets/images/logo/Elite_Logo.png" alt="Elite_Logo" width="150" class="logo" />
+        <img src="assets/images/logo/Elite_Logo-White.png" alt="Elite_Logo" width="150" class="hidden white_logo" />
+      </a>
+      <div class="header ml-auto">
+        <div class="menu-icon md:hidden absolute top-2 right-4">
+          <i class="fa fa-bars"></i>
+        </div>
+        <div class="list flex flex-col md:flex-row relative">
+          <div class="menu-icon md:hidden absolute top-2 right-4">
+            <i class="fa fa-xmark"></i>
+          </div>
+          <ul class="flex flex-col md:flex-row relative">
+            <li class="group relative mt-2 py-2 px-3 hover:bg-sky-500 hover:text-white md:mt-0">
+              <a href="paperback_formte.html"> Services </a>
+              <div class="group-hover:block top-9 absolute hidden h-auto flex z-10">
+                <ul class="block bg-white shadow-xl text-black rounded w-max p-2 ">
+                  <li class="p-2 hover:bg-sky-400 hover:text-white">
+                    <a href="./paperback_formte.html">
+                      <span>Paperback Formate</span>
+                    </a>
+                  </li>
+                  <li class="p-2 hover:bg-sky-400 hover:text-white">
+                    <a href="./ebookFormat.html">
+                      <span>eBook Formate</span>
+                    </a>
+                  </li>
+                  <li class="p-2 hover:bg-sky-400 hover:text-white">
+                    <a href="./brochure_desgin.html">
+                      <span>Brochure Design</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </li>
-            <li class="nav-item">
-              <a
-                class="nav-link active mx-2"
-                href="#"
-                style="color: rgb(2, 222, 207)"
-                >FAQ</a
-              >
+            <li class="group relative py-2 px-3  hover:bg-sky-500 hover:text-white hover:text-white md:mt-0">
+              <a href="#"> Book Cover Design </a>
+              <div class="group-hover:block top-9 absolute hidden h-auto flex z-10">
+                <ul class="block bg-white shadow-xl text-black rounded w-max p-2">
+                  <li class="p-2 hover:bg-sky-400 hover:text-white">
+                    <a href="./paperback_cover.html">
+                      <span>Paperback Cover Design</span>
+                    </a>
+                  </li>
+                  <li class="p-2 hover:bg-sky-400 hover:text-white">
+                    <a href="./eBook_cover.html">
+                      <span>eBook Cover Design</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </li>
-            <li class="nav-item">
-              <a
-                class="nav-link active mx-2"
-                href="#"
-                style="color: rgb(2, 222, 207)"
-                >CONTACT</a
-              >
+            <li class="group py-2 px-3  hover:bg-sky-500 hover:text-white hover:text-white md:mt-0">
+              <a href="Portfolio.html"> Portfolio </a>
             </li>
-            <li>
-              <form class="d-flex">
-                <a href="#" class="mx-4">
-                  <ion-icon name="search-outline"></ion-icon>
-                </a>
-              </form>
+            <li class="group py-2 px-3  hover:bg-sky-500 hover:text-white hover:text-white md:mt-0">
+              <link rel="stylesheet" href="assets/library/owl/owl.carousel.min.css" />
+              <a href="contact.html"> Contact Us </a>
             </li>
           </ul>
         </div>
       </div>
-    </nav>
+    </header>
 
-    <div class="container d-flex justify-content-center mt-3" id="books">
-      <img
-        src="assets/images/hossein-beygi-rTxqf69Ckp8-unsplash.jpg"
-        width="200px"
-        height="250px"
-      />
-    </div>
-
-    <div
-      class="container mt-5 d-flex justify-content-center align-items-center flex-column"
-    >
-      <h2 class="text-center" id="heading">
-        PUBLISHING YOUR EBOOK IS AS EASY AS 1, 2, 3!
-      </h2>
-      <div class="container mt-4 d-flex justify-content-center" id="boxes">
-        <div class="bg-primary text-center" id="box_a">
-          <img
-            src="assets/images/Cyber attack Customizable Cartoon Illustrations _ Bro Style.png"
-            width="100%"
-            height="250px"
-          />
-          <h3 class="mt-3 text-white">1.CREATION</h3>
-          <p class="text-white">
-            First, we create a custom eBook for you, by providing professional
-            formatting, and beautiful cover design.
-          </p>
-        </div>
-        <div class="bg-danger text-center" id="box_b">
-          <img src="assets/images/10172.png" width="100%" height="250px" />
-          <h3 class="mt-3 text-white">1.DISTRIBUTION</h3>
-          <p class="text-white">
-            First, we create a custom eBook for you, by providing professional
-            formatting, and beautiful cover design.
-          </p>
-        </div>
-        <div class="bg-info text-center" id="box_c">
-          <img src="assets/images/4804443.png" width="100%" height="250px" />
-          <h3 class="mt-3 text-white">1.MARKETING</h3>
-          <p class="text-white">
-            First, we create a custom eBook for you, by providing professional
-            formatting, and beautiful cover design.
-          </p>
+    <!-- main -->
+    <main class="md:-mt-85 pt-5 md:pt-20 lg:pt-24 w-full scroll-smooth">
+      <div class="banner p-10 pb-0 lg:pr-0 flex lg:items-end">
+        <div class="owl-carousel owl-theme">
+          <div class="item flex text-white max-xl:flex-col">
+            <div class="flex md:items-start py-5 flex-col">
+              <h2 class="text-5xl font-poppinsbold py-5 tracking-wide max-lg:text-4xl max-md:text-3xl">
+                We've got you covered! Cover to cover
+              </h2>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi
+                fugiat expedita, aliquid suscipit nemo culpa? Laboriosam
+                inventore sed quam aspernatur tempora, quibusdam aperiam
+                saepe, dolorem iste incidunt commodi. Obcaecati, delectus.
+              </p>
+              <a href="/paperback_formte.html"
+                class="px-14 py-3.5 bg-black mt-4 font-bold tracking-wide rounded-full uppercase hover:bg-white hover:text-sky-500 hover:shadow-sm transition duration-500">
+                View Services
+              </a>
+            </div>
+            <img src="assets/images/Homepage_S.png" alt="books" class="h-auto ml-auto" />
+          </div>
+          <div class="item flex text-white">
+            <div class="flex items-start py-5 flex-col">
+              <h2 class="text-5xl font-poppinsbold py-5 tracking-wide max-lg:text-4xl max-md:text-3xl">
+                We've got you covered! Cover to cover
+              </h2>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi
+                fugiat expedita, aliquid suscipit nemo culpa? Laboriosam
+                inventore sed quam aspernatur tempora, quibusdam aperiam
+                saepe, dolorem iste incidunt commodi. Obcaecati, delectus.
+              </p>
+              <a href="Portfolio.html"
+                class="px-14 py-3.5 bg-black mt-4 font-bold tracking-wide rounded-full uppercase hover:bg-white hover:text-sky-500 hover:shadow-sm transition duration-500">
+                Cover Design
+              </a>
+            </div>
+            <img src="assets/images/HomepageS_Design-2.png" alt="books" class="h-full block ml-auto" />
+          </div>
         </div>
       </div>
-    </div>
-
-    <div class="container-fluid mt-5 d-flex justify-content-center flex-column">
-      <h2 class="text-center">The Acepub Advantage</h2>
-      <div
-        class="container mt-4 d-flex justify-content-center align-items-center"
-        id="sample"
-      >
-        <div class="">
-          <h3>Free Sample</h3>
-          <p>
-            When you submit your manuscript or print book, our designers will
-            create a free custom eBook sample, so you know exactly what to
-            expect of the final product. There's no risk, and no obligation —
-            proceed only if you love it! (Over 90% of Acepub's clients do!)
-          </p>
+      <!-- services section -->
+      <section class="services p-10 lg:flex bg-black text-white">
+        <div
+          class="w-full lg:w-1/4 p-5 mb-3 lg:mb-0 lg:mr-3 flex flex-col items-center text-center border border-slate-800 rounded-xl shadow-2xl hover:shadow-slate-900">
+          <i class="fa-solid fa-file-pen text-6xl pb-5 text-sky-500"></i>
+          <div class="text-xl font-black py-3 tracking-wide">
+            Book Editing
+            <div>Services</div>
+          </div>
+          <span class="opacity-70">Good books have professional covers and formatting, but great
+            books have also been professionally edited. Our editors take books
+            to the next level.</span>
+          <button class="btn px-8 py-2.5 mt-3 text-sm bg-white text-black hover:bg-sky-500 hover:text-white">
+            Learn More
+          </button>
         </div>
-        <div class="">
-          <h3>Free Sample</h3>
-          <p>
-            When you submit your manuscript or print book, our designers will
-            create a free custom eBook sample, so you know exactly what to
-            expect of the final product. There's no risk, and no obligation —
-            proceed only if you love it! (Over 90% of Acepub's clients do!)
-          </p>
+        <div
+          class="w-full lg:w-1/4 p-5 my-3 lg:my-0 lg:mx-3 flex flex-col items-center text-center border border-slate-800 rounded-xl shadow-2xl hover:shadow-slate-900">
+          <i class="fa-solid fa-book-atlas text-6xl pb-5 text-sky-500"></i>
+          <div class="text-xl font-black py-3 tracking-wide">
+            eBook
+            <div>Cover Design</div>
+          </div>
+          <span class="opacity-70">Our striking ebook and print covers are sure to sell more books.
+            We’ll work with you until you’re 100% satisfied with your cover
+            design.</span>
+          <button class="btn px-8 py-2.5 mt-3 text-sm bg-white text-black hover:bg-sky-500 hover:text-white">
+            Learn More
+          </button>
         </div>
-        <div class="">
-          <h3>Free Sample</h3>
-          <p>
-            When you submit your manuscript or print book, our designers will
-            create a free custom eBook sample, so you know exactly what to
-            expect of the final product. There's no risk, and no obligation —
-            proceed only if you love it! (Over 90% of Acepub's clients do!)
-          </p>
+        <div
+          class="w-full lg:w-1/4 p-5 my-3 lg:my-0 lg:mx-3 flex flex-col items-center text-center border border-slate-800 rounded-xl shadow-2xl hover:shadow-slate-900">
+          <i class="fa fa-pager text-6xl pb-5 text-sky-500"></i>
+          <div class="text-xl font-black py-3 tracking-wide">
+            eBook<div>Formatting</div>
+          </div>
+          <span class=" opacity-70">We take the worry out of your ebook formatting for Smashwords,
+            Amazon KDP, Kobo, Apple, Barnes & Noble and IngramSpark.
+          </span>
+          <button class="btn px-8 py-2.5 mt-3 text-sm bg-white text-black hover:bg-sky-500 hover:text-white">
+            Learn More
+          </button>
         </div>
-      </div>
+        <div
+          class="w-full lg:w-1/4 p-5 mt-3 lg:mt-0 lg:ml-3 flex flex-col items-center text-center border border-slate-800 rounded-xl shadow-2xl hover:shadow-slate-900">
+          <i class="fa-solid fa-print text-6xl pb-5 text-sky-500"></i>
+          <div class="text-xl font-black py-3 tracking-wide">
+            Print Book<div>Formatting</div>
+          </div>
+          <span class="opacity-70">Love the look and feel of a real book? We can help! We offer
+            professional print formatting for KDP Print and IngramSpark.
+          </span>
 
-      <div
-        class="container mt-4 d-flex justify-content-center align-items-center"
-        id="sample"
-      >
-        <div class="">
-          <h3>Free Sample</h3>
-          <p>
-            When you submit your manuscript or print book, our designers will
-            create a free custom eBook sample, so you know exactly what to
-            expect of the final product. There's no risk, and no obligation —
-            proceed only if you love it! (Over 90% of Acepub's clients do!)
-          </p>
+          <button class="btn px-8 py-2.5 mt-3 text-sm bg-white text-black hover:bg-sky-500 hover:text-white">
+            Learn More
+          </button>
         </div>
-        <div class="">
-          <h3>Free Sample</h3>
-          <p>
-            When you submit your manuscript or print book, our designers will
-            create a free custom eBook sample, so you know exactly what to
-            expect of the final product. There's no risk, and no obligation —
-            proceed only if you love it! (Over 90% of Acepub's clients do!)
-          </p>
+      </section>
+
+      <!-- PUBLISHING SITES -->
+      <section class="p-5 bg-gray-100 flex justify-center items-center max-md:flex-col">
+        <img src="assets/images/kindle direct.png" alt="kindle direct" width="200px"
+          class="mx-10 max-lg:w-28 max-md:w-52 max-md:mt-5">
+        <img src="assets/images/Amazon-Kindle-Logo.png" alt="amazon_kindle logo" width="200px"
+          class="mx-10 max-lg:w-28 max-md:w-52 max-md:mt-5" />
+        <img src="assets/images/ingramspark-logo.png" alt="ingramspark-logo" width="200px"
+          class="mx-10 max-lg:w-28 max-md:w-52 max-md:mt-5">
+        <img src="assets/images/kobo_writing_life.png" alt="kobo logo" width="200px"
+          class="mx-10 max-lg:w-28 max-md:w-52 max-md:mt-5" />
+      </section>
+
+      <!-- love working with elite book -->
+      <section class="services py-10 px-5 md:px-28 bg-gray-100 text-dark">
+        <div class="text-center text-xl md:text-5xl font-poppinsbold md:pb-16 tracking-wide">
+          You’ll Love Working With eBook Launch
         </div>
-        <div class="">
-          <h3>Free Sample</h3>
-          <p>
-            When you submit your manuscript or print book, our designers will
-            create a free custom eBook sample, so you know exactly what to
-            expect of the final product. There's no risk, and no obligation —
-            proceed only if you love it! (Over 90% of Acepub's clients do!)
-          </p>
+        <div class="lg:flex">
+          <div class="w-full text-left md:flex-col lg:mb-0 grid-flow-col items-center">
+            <div
+              class="text-lg md:text-2xl text-left font-black py-2.5 :py-10 tracking-wide underline underline-offset-8">
+              We’re affordable
+            </div>
+            <div
+              class="text-lg md:text-2xl text-left font-black py-2.5 :py-10 tracking-wide underline underline-offset-8">
+              We never take royalties
+            </div>
+            <div
+              class="text-lg md:text-2xl text-left font-black py-2.5 :py-10 tracking-wide underline underline-offset-8">
+              We’re timely, knowledgable and friendly
+
+            </div>
+          </div>
+          <div class="w-full py-5 md:py-0">
+            <div class="relative top-0 md:pt-20">
+              <a href="#" class="books__book__image">
+                <div class="books__book__img">
+                  <img src="assets/images/eBook_Icon_animation.png" alt="eBook_Icon_animation"
+                    class="w-40 md:w-auto mx-auto drop-shadow-3xl">
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="w-full text-left md:flex-col lg:mb-0 grid-flow-col items-center">
+            <div
+              class="text-lg md:text-2xl text-left font-black py-2.5 md:py-10 tracking-wide underline underline-offset-8">
+              We’re fast without compromising quality
+            </div>
+            <div
+              class="text-lg md:text-2xl text-left font-black py-2.5 md:py-10 tracking-wide underline underline-offset-8">
+              We test on every major device
+            </div>
+            <div
+              class="text-lg md:text-2xl text-left font-black py-2.5 md:py-10 tracking-wide underline underline-offset-8">
+              We’re experienced and reliable and we have been providing author services.
+            </div>
+          </div>
         </div>
-      </div>
-      <div
-        class="d-flex justify-content-center p-5 mb-5"
-        style="border-bottom: 1px solid rgb(226, 226, 226); max-width: 100%"
-        id="buttons"
-      >
-        <button class="btn btn-primary mx-3">
-          <ion-icon name="file-tray-stacked-outline"></ion-icon> Request Free
-          Cover Consultation
-        </button>
-        <button class="btn btn-danger mx-3">
-          <ion-icon name="book-outline"></ion-icon> Request Free eBook Sample
-        </button>
-      </div>
-    </div>
+      </section>
+      <!-- testimonials -->
+      <section class="testimonials p-10 bg-gray-200">
+        <div class="text-center text-xl md:text-5x font-extrabold pb-16 tracking-wide">
+          Testimonial
+        </div>
+        <div class="owl-carousel owl-theme">
+          <div class="m-auto item p-5 max-w-3xl rounded mb-5 flex flex-col items-center">
+            <img src="assets/images/dp.jpeg" alt="client1" class="h-24 rounded-full object-cover" />
+            <div class="text-xl font-bold py-2 tracking-wide">Dp</div>
+            <span class="text-center italic">"Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Fugit, magnam laudantium quis, voluptatum temporibus sint quam
+              natus corrupti ab ex aut maiores aliquid saepe qui iste? Natus
+              optio impedit inventore."</span>
+          </div>
+          <div class="m-auto item p-5 max-w-3xl rounded mb-5 flex flex-col items-center">
+            <img src="assets/images/dhaval.jpg" alt="client2" class="h-24 rounded-full object-cover" />
+            <div class="text-xl font-bold py-2 tracking-wide">Dhaval</div>
+            <span class="text-center italic">"Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Fugit, magnam laudantium quis, voluptatum temporibus sint quam
+              natus corrupti ab ex aut maiores aliquid saepe qui iste? Natus
+              optio impedit inventore."</span>
+          </div>
+        </div>
+      </section>
 
-    <div class="container d-flex justify-content-center" id="images">
-      <img
-        src="assets/images/Amazon-Kindle-Logo-ES-150x81 (1).jpg"
-        class="img-fluid mx-3"
-      />
-      <img
-        src="assets/images/Createspace-logo-150x78.png"
-        class="img-fluid mx-3"
-      />
-      <img
-        src="assets/images/Apple-iBooks-Logo-ES-150x81.jpg"
-        class="img-fluid mx-3"
-      />
-      <img
-        src="assets/images/kobo_writing_life-150x64.jpg"
-        class="img-fluid mx-3"
-      />
-    </div>
+      <!-- request buttons -->
+      <section class="py-5 md:py-10 px-2 md:px-10 lg:px-20 lg:flex justify-center">
+        <a href="eliteForm.html"
+          class="w-full block text-center lg:w-1/3 btn px-4 py-2 md:px-8 md:py-4 my-3 lg:my-0 lg:mx-2 text-sm bg-white text-black border-2 hover:bg-black hover:text-white hover:shadow-lg">
+          Request Free Cover Consultation
+        </a>
+        <a href="eliteForm.html"
+          class="w-full block text-center lg:w-1/3 btn px-4 py-2 md:px-8 md:py-4 my-3 lg:my-0 lg:mx-2 text-sm bg-black text-white border-2 border-transparent hover:border-white hover:shadow-lg">
+          Request Free eBook Sample
+        </a>
+      </section>
 
-    <div
-      class="container-fluid bg-danger d-flex justify-content-center align-items-center mt-5"
-    >
-      <div
-        class="d-flex justify-content-center align-items-center p-5 text-white"
-      >
-        <h3>
-          “Acepub has been fantastic to work with. They quickly converted my
-          book to ebook format, answered questions quickly, and even helped with
-          an important edit, long after they were obligated to. These guys are a
-          great partner to have for publishing ebooks!”
-        </h3>
-      </div>
-      <div class="d-flex justify-content-center align-items-center">
-        <img
-          src="assets/images/Scott-Orth.jpg"
-          width="150px"
-          height="150px"
-          style="
-            border: 1px solid rgb(214, 214, 214);
-            padding: 10px;
-            border-radius: 100%;
-          "
-        />
-      </div>
-    </div>
+      <!-- footer -->
+      <footer class="py-5 px-10 bg-black text-white lg:flex items-center">
+        <span class="opacity-75">&copy; 2023 EliteeBookDesign All Rights Reserved</span>
+        <ul class="flex flex-wrap md:flex-nowrap py-2 lg:py-0 lg:ml-3 uppercase">
+          <li
+            class="mx-1 py-0.5 md:px-4 rounded-lg opacity-75 border border-transparent md:hover:border-white hover:opacity-100 md:hover:bg-sky-600">
+            <a href="paperback_formte.html">SERVICES</a>
+          </li>
+          <li
+            class="mx-1 py-0.5 md:px-4 rounded-lg opacity-75 border border-transparent md:hover:border-white hover:opacity-100 md:hover:bg-sky-600">
+            <a href="paperback_cover.html">BOOK COVER DESIGN</a>
+          </li>
+          <li
+            class="mx-1 py-0.5 md:px-4 rounded-lg opacity-75 border border-transparent md:hover:border-white hover:opacity-100 md:hover:bg-sky-600">
+            <a href="Portfolio.html">Portfolio</a>
+          </li>
+          <li
+            class="mx-1 py-0.5 md:px-4 rounded-lg opacity-75 border border-transparent md:hover:border-white hover:opacity-100 md:hover:bg-sky-600">
+            <a href="contact.html">Contact US</a>
+          </li>
+        </ul>
+        <div class="flex ml-auto items-center">
+          <span>Follow us :</span>
+          <ul class="flex ml-1">
+            <li class="text-lg p-2 hover:text-sky-400">
+              <a href="https://www.facebook.com/people/Elite-Creations/100086756493398/?mibextid=ZbWKwL" target="_blank"
+                aria-label="Facebook">
+                <i class="fa-brands fa-facebook"></i>
+              </a>
+            </li>
+            <li class="text-lg p-2 hover:text-sky-400">
+              <a href="https://www.instagram.com/elitebookdesign/?igshid=YmMyMTA2M2Y%3D" target="_blank"
+                aria-label="Instagram">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </li>
+            <li class="text-lg p-2 hover:text-sky-400">
+              <a href="https://www.linkedin.com/company/elite-book-design/" aria-label="Linkedin" target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+    </main>
+  </div>
+  <script src="assets/library/fontawesome/js/all.min.js"></script>
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/library/owl/owl.carousel.min.js"></script>
+  <script src="assets/js/tailwind_config.js"></script>
+  <script src="assets/js/custom.js"></script>
+  <script>
+    $(document).ready(function () {
+      $(".banner .owl-carousel").owlCarousel({
+        nav: false, // Show next and prev buttons
+        dots: false,
+        slideSpeed: 300,
+        paginationSpeed: 400,
 
-    <div
-      class="p-5 text-white container-fluid bg-dark d-flex justify-content-center align-items-center"
-    >
-      <h2>Publice Yourself from $99!</h2>
-    </div>
+        items: 1,
+        itemsDesktop: false,
+        itemsDesktopSmall: false,
+        itemsTablet: false,
+        itemsMobile: false,
+      });
+    });
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
-  </body>
+    // testimonial
+    $(document).ready(function () {
+      $(".testimonials .owl-carousel").owlCarousel({
+        nav: false, // Show next and prev buttons
+        dots: true,
+        slideSpeed: 300,
+        paginationSpeed: 400,
+
+        items: 1,
+        itemsDesktop: false,
+        itemsDesktopSmall: false,
+        itemsTablet: false,
+        itemsMobile: false,
+      });
+    });
+  </script>
+</body>
+
 </html>
