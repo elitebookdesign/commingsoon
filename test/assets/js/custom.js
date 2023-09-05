@@ -26,12 +26,12 @@ window.onscroll = function () {
   }
 };
 
-// $(window).on('load',function(){
-// 	setTimeout(function(){ // allowing 3 secs to fade out loader
-// 	$('.lds-ripple').fadeOut('slow');
-//   document.getElementsByTagName('body')[0].classList.remove('overflow-hidden');
-// 	},1000);
-// });
+$(window).on('load', function () {
+  setTimeout(function () { // allowing 3 secs to fade out loader
+    $('.lds-ripple').fadeOut('slow');
+    document.getElementsByTagName('body')[0].classList.remove('overflow-hidden');
+  }, 1000);
+});
 
 
 // portfolio

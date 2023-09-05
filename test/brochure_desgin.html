@@ -26,6 +26,14 @@
 </head>
 
 <body>
+    <!-- loader -->
+    <div class="lds-ripple fixed w-full h-full z-20 flex justify-center items-center bg-black opacity-80">
+        <span class="flex h-10 w-10 relative">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-10 w-10 bg-sky-500"></span>
+        </span>
+    </div>
+
     <nav class="bg-black w-full px-2 border-b">
         <ul class="text-white hidden md:flex justify-end items-center">
             <li class="group relative p-3 pr-0 ">
@@ -89,11 +97,11 @@
                     </div>
                     <ul class="flex flex-col md:flex-row relative">
                         <li class="group relative mt-2 py-2 px-3  hover:bg-sky-500 hover:text-white md:mt-0 ">
-                            <a class="text-black" href="#"> Services </a>
+                            <a class="text-black" href="./paperback_format.html"> Services </a>
                             <div class="group-hover:block top-9 absolute hidden h-auto flex z-10">
                                 <ul class="block bg-white shadow-xl text-black rounded w-max p-2">
                                     <li class="p-2 hover:bg-sky-400 hover:text-white">
-                                        <a href="./paperback_formte.html">
+                                        <a href="./paperback_format.html">
                                             <span>Paperback Formate</span>
                                         </a>
                                     </li>
@@ -112,11 +120,11 @@
                         </li>
                         <li
                             class="group relative py-2 px-3  hover:bg-sky-500 hover:text-white hover:text-white md:mt-0 ">
-                            <a class="text-black" href="#"> Book Cover Design </a>
+                            <a class="text-black" href="./paperback_cover.html"> Book Cover Design </a>
                             <div class="group-hover:block top-9 absolute hidden h-auto flex z-10">
                                 <ul class="block bg-white shadow-xl text-black rounded w-max p-2">
                                     <li class="p-2 hover:bg-sky-400 hover:text-white">
-                                        <a href="paperback_cover.html">
+                                        <a href="./paperback_cover.html">
                                             <span>Paperback Cover Design</span>
                                         </a>
                                     </li>
@@ -138,22 +146,22 @@
                 </div>
             </div>
         </header>
-        <main class="-mt-[75px] pt-20 w-full scroll-smooth">
-            <div class="banner p-10 pb-0 lg:pr-0 flex lg:items-end">
+        <main class="-mt-[75px] pt-5 md:pt-20 lg:pt-24 w-full scroll-smooth">
+            <div class="banner px-5 py-10 md:p-10 pb-0 lg:pr-0 flex lg:items-end">
                 <div class="flex text-black">
-                    <div class="flex items-start pt-36 flex-col">
-                        <h2 class="text-5xl font-poppinsbold py-5 tracking-wide">
+                    <div class="flex items-start pt-24 md:pt-36 flex-col">
+                        <h2 class="text-5xl font-poppinsbold py-5 tracking-wide max-lg:text-4xl max-md:text-3xl">
                             Brochure Design
                         </h2>
                         <a href="eliteForm.html"
-                            class="px-14 py-3.5 text-white bg-black mt-4 font-bold tracking-wide rounded-full uppercase hover:bg-sky-500 hover:text-white hover:shadow-sm transition duration-500">
+                            class="px-5 py-2 md:px-14 md:py-3.5 text-white bg-black mt-4 font-bold tracking-wide rounded-full uppercase hover:bg-sky-500 hover:text-white hover:shadow-sm transition duration-500">
                             CLICK HERE TO GET A QUOTE!
                         </a>
                     </div>
                 </div>
             </div>
         </main>
-        <section class="py-10 px-28 bg-gray-100 text-dark">
+        <section class="py-10 px-5 md:px-28 bg-gray-100 text-dark">
             <div class="text-justify text-gray-600 ">
                 Elite is professional graphic brochure design company, delivering sophisticated corporate
                 identity design, catalogue designing, corporate brochure, Print collateral, retail product
@@ -165,23 +173,23 @@
                 spread the awareness about your business. Our designs of brochure and flyer are rich in creative
                 and also satisfy all content information need.
             </div>
-            <div class="flex justify-center gap-5">
+            <div class="md:flex justify-center gap-5">
                 <a href="./contact.html"
-                    class="block btn px-8 py-4 mt-2 lg:mt-5 text-sm text-sm bg-black hover:bg-sky-600 text-white hover:shadow-lg">
+                    class="block btn text-center px-8 py-4 mt-2 lg:mt-5 text-sm text-sm bg-black hover:bg-sky-600 text-white hover:shadow-lg">
                     QUICK CONTACT
                 </a>
                 <a href="./Portfolio.html"
-                    class="block btn px-8 py-4 mt-2 lg:mt-5 text-sm text-sm bg-black hover:bg-sky-600 text-white hover:shadow-lg">
+                    class="block btn text-center px-8 py-4 mt-2 lg:mt-5 text-sm text-sm bg-black hover:bg-sky-600 text-white hover:shadow-lg">
                     PORTFOLIO
                 </a>
             </div>
         </section>
         <!-- Brochure Design Timeline: -->
-        <section class="servic_include py-10 px-28 bg-white text-black">
-            <div class="text-center text-4xl font-poppinsbold pb-16 tracking-wide">
+        <section class="servic_include py-10 px-5 md:px-28 bg-white text-black">
+            <div class="text-center text-xl md:text-4xl font-poppinsbold pb-5 md:pb-16 tracking-wide">
                 Brochure Design Timeline:
             </div>
-            <div class="lg:flex gap-5 text-center text-black">
+            <div class="flex flex-col md:flex-row gap-5 text-center text-black">
                 <div
                     class="group border rounded-md  lg:w-1/3 p-5 flex flex-col items-center hover:shadow-lg hover:border-black transition-all duration-300">
                     <div class="flex flex-col items-center text-xl py-3 tracking-wide ">
@@ -211,11 +219,11 @@
         </section>
 
         <!-- Brochure design services -->
-        <section class="why-choose py-10 px-28 bg-black text-white">
-            <div class="text-center text-4xl font-poppinsbold tracking-wide">
+        <section class="why-choose py-10 px-5 md:px-28 bg-black text-white">
+            <div class="text-center text-xl md:text-4xl font-poppinsbold tracking-wide">
                 Brochure Designing Services
             </div>
-            <p class="text-base px-28 text-center py-5">
+            <p class="text-base px-5 md:px-28 text-justify md:text-center py-5">
                 Your brochure is like your first welcoming handshake and we at Elite make your first impression just
                 perfect. We help create brochures that spark conversations and take your brands places. Our brochure
                 designs offer,
@@ -253,11 +261,11 @@
         </section>
 
         <!-- Brochure Aligned to Your Brand Value -->
-        <section class="servic_include py-10 px-28 bg-white text-black">
-            <div class="text-center text-4xl font-poppinsbold tracking-wide">
+        <section class="servic_include py-10 px-5 md:px-28 bg-white text-black">
+            <div class="text-center text-xl md:text-4xl font-poppinsbold tracking-wide">
                 Brochure Aligned to Your Brand Value
             </div>
-            <p class="text-base pt-10 text-center">
+            <p class="text-base pt-10 text-justify md:text-center">
                 Our clients trust us to design purposefully-designed brochures that share your brand story succinctly
                 and inspire interest. The creative artwork and compelling design are aligned to your brand values and
                 crafted, keeping in mind the objective, the audience and the purpose. We understand the potential and
@@ -266,11 +274,11 @@
         </section>
 
         <!-- Brochure Design Helps Business -->
-        <section class="py-10 px-28 bg-sky-500 text-white">
-            <div class="text-center text-4xl font-poppinsbold tracking-wide">
+        <section class="py-10 px-5 md:px-28 bg-sky-500 text-white">
+            <div class="text-center text-xl md:text-4xl font-poppinsbold tracking-wide">
                 How Brochure Design Helps Business Become Better?
             </div>
-            <div class="grid grid-cols-3 gap-10 pt-10 text-base text-justify">
+            <div class="grid md:grid-cols-3 gap-5 md:gap-10 pt-10 text-base text-justify">
                 <div>Brochures and visual aids are nevertheless incredibly valuable for the purpose of marketing and
                     sales. No product/service can create marketing and sales plans without a brochure. We make amazing
                     brochures/booklets that appeal to all. Please contact us to make bi-folding, tri-fold, z-fold,
@@ -289,56 +297,56 @@
         </section>
 
         <!-- PUBLISHING SITES -->
-        <section class="py-10 px-28 bg-gray-200">
-            <div class="text-center text-4xl font-poppinsbold tracking-wide">
+        <section class="py-10 px-5 md:px-28 bg-gray-200">
+            <div class="text-center text-xl md:text-4xl font-poppinsbold tracking-wide">
                 We Design Brochure for Related Product Such As
             </div>
-            <div class="grid grid-cols-4 gap-5 pt-10">
+            <div class="grid md:grid-cols-4 gap-5 pt-10">
                 <div class="p-5 flex flex-col items-center text-center rounded-xl  hover:shadow-2xl">
                     <img src="./assets/images/brochure/marketing-brochure.png" alt="marketing-brochure" class="w-20">
-                    <div class="text-xl font-black py-3 tracking-wide">
+                    <div class="text-lg md:text-xl font-black py-3 tracking-wide">
                         Marketing Brochure
                     </div>
                 </div>
                 <div class="p-5 flex flex-col items-center text-center rounded-xl  hover:shadow-2xl">
                     <img src="./assets/images/brochure/corporate-brochure.png" alt="corporate-brochure" class="w-20">
-                    <div class="text-xl font-black py-3 tracking-wide">
+                    <div class="text-lg md:text-xl font-black py-3 tracking-wide">
                         Corporate Brochure
                     </div>
                 </div>
                 <div class="p-5 flex flex-col items-center text-center rounded-xl  hover:shadow-2xl">
                     <img src="./assets/images/brochure/pdf-brochure.png" alt="pdf-brochure" class="w-20">
-                    <div class="text-xl font-black py-3 tracking-wide">
+                    <div class="text-lg md:text-xl font-black py-3 tracking-wide">
                         Pdf brochure
                     </div>
                 </div>
                 <div class="p-5 flex flex-col items-center text-center rounded-xl  hover:shadow-2xl">
                     <img src="./assets/images/brochure/mail-brochure.png" alt="mail-brochure" class="w-20">
-                    <div class="text-xl font-black py-3 tracking-wide">
+                    <div class="text-lg md:text-xl font-black py-3 tracking-wide">
                         Mailer brochure
                     </div>
                 </div>
                 <div class="p-5 flex flex-col items-center text-center rounded-xl  hover:shadow-2xl">
                     <img src="./assets/images/brochure/flyer-brochure.png" alt="flyer-brochure" class="w-20">
-                    <div class="text-xl font-black py-3 tracking-wide">
+                    <div class="text-lg md:text-xl font-black py-3 tracking-wide">
                         Flyer Brochure
                     </div>
                 </div>
                 <div class="p-5 flex flex-col items-center text-center rounded-xl  hover:shadow-2xl">
                     <img src="./assets/images/brochure/tri-fold-brochure.png" alt="tri-fold-brochure" class="w-20">
-                    <div class="text-xl font-black py-3 tracking-wide">
+                    <div class="text-lg md:text-xl font-black py-3 tracking-wide">
                         Tri-fold Brochure
                     </div>
                 </div>
                 <div class="p-5 flex flex-col items-center text-center rounded-xl  hover:shadow-2xl">
                     <img src="./assets/images/brochure/sales-brochure.png" alt="sales-brochure" class="w-20">
-                    <div class="text-xl font-black py-3 tracking-wide">
+                    <div class="text-lg md:text-xl font-black py-3 tracking-wide">
                         Sales Brochure
                     </div>
                 </div>
                 <div class="p-5 flex flex-col items-center text-center rounded-xl  hover:shadow-2xl">
                     <img src="./assets/images/brochure/business-brochure.png" alt="business-brochure" class="w-20">
-                    <div class="text-xl font-black py-3 tracking-wide">
+                    <div class="text-lg md:text-xl font-black py-3 tracking-wide">
                         Business brochure
                     </div>
                 </div>
@@ -352,7 +360,7 @@
             <ul class="flex flex-wrap md:flex-nowrap py-2 lg:py-0 lg:ml-3 uppercase">
                 <li
                     class="mx-1 py-0.5 md:px-4 rounded-lg opacity-75 border border-transparent md:hover:border-white hover:opacity-100 md:hover:bg-sky-600">
-                    <a href="paperback_formte.html">SERVICES</a>
+                    <a href="paperback_format.html">SERVICES</a>
                 </li>
                 <li
                     class="mx-1 py-0.5 md:px-4 rounded-lg opacity-75 border border-transparent md:hover:border-white hover:opacity-100 md:hover:bg-sky-600">

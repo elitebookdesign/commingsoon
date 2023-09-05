@@ -27,6 +27,14 @@
 </head>
 
 <body>
+    <!-- loader -->
+    <div class="lds-ripple fixed w-full h-full z-20 flex justify-center items-center bg-black opacity-80">
+        <span class="flex h-10 w-10 relative">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-10 w-10 bg-sky-500"></span>
+        </span>
+    </div>
+
     <nav class="bg-black w-full px-2 border-b">
         <ul class="text-white hidden md:flex justify-end items-center">
             <li class="group relative p-3 pr-0 ">
@@ -84,17 +92,17 @@
                 <div class="menu-icon md:hidden">
                     <i class="fa fa-bars"></i>
                 </div>
-                <div class="/ flex flex-col md:flex-row relative">
+                <div class="list flex flex-col md:flex-row relative">
                     <div class="menu-icon md:hidden absolute top-1 right-2">
                         <i class="fa fa-xmark"></i>
                     </div>
                     <ul class="flex flex-col md:flex-row relative">
                         <li class="group relative mt-2 py-2 px-3  hover:bg-sky-500 hover:text-white md:mt-0 ">
-                            <a class="text-black" href="#"> Services </a>
+                            <a class="text-black" href="./paperback_format.html"> Services </a>
                             <div class="group-hover:block top-9 absolute hidden h-auto flex z-10">
                                 <ul class="block bg-white shadow-xl text-black rounded w-max p-2">
                                     <li class="p-2 hover:bg-sky-400 hover:text-white">
-                                        <a href="./paperback_formte.html">
+                                        <a href="./paperback_format.html">
                                             <span>Paperback Formate</span>
                                         </a>
                                     </li>
@@ -113,7 +121,7 @@
                         </li>
                         <li
                             class="group relative py-2 px-3  hover:bg-sky-500 hover:text-white hover:text-white md:mt-0 ">
-                            <a class="text-black" href="#"> Book Cover Design </a>
+                            <a class="text-black" href="./paperback_cover.html"> Book Cover Design </a>
                             <div class="group-hover:block top-9 absolute hidden h-auto flex z-10">
                                 <ul class="block bg-white shadow-xl text-black rounded w-max p-2">
                                     <li class="p-2 hover:bg-sky-400 hover:text-white">
@@ -139,12 +147,12 @@
                 </div>
             </div>
         </header>
-        <main class="-mt-[75px] pt-20 w-full scroll-smooth">
+        <main class="-mt-[75px] pt-32 px-5 w-full scroll-smooth">
             <div class="flex flex-col items-center">
-                <span class="font-poppinsbold md:text-4xl py-10 text-center">Custom
+                <h2 class="text-5xl font-poppinsbold py-5 tracking-wide max-lg:text-4xl max-md:text-3xl">Custom
                     Book Cover
-                    Portfolio</span>
-                <span class="w-3/4 text-center">Welcome to our portfolio
+                    Portfolio</h2>
+                <span class="md:w-3/4 text-justify md:text-center">Welcome to our portfolio
                     of custom book covers! Since 2022, we’ve had the pleasure of designing hundreds of book covers
                     for independent authors and publishers in nearly every genre. Below we have featured some of our
                     favourites. We understand that you’re looking for designs that are relevant to you, so we’ve
@@ -153,16 +161,22 @@
                     order.</span>
             </div>
 
-            <ul id="filter" class="flex items-center justify-center py-10 text-xl max-sm:text-sm/[17px]">
-                <li class="px-5 pb-0.5 border-b-2 border-transparent cursor-pointer active" id="series">Book Series</li>
-                <li class="px-5 pb-0.5 border-b-2 border-transparent cursor-pointer" id="cook">Cook Book</li>
-                <li class="px-5 pb-0.5 border-b-2 border-transparent cursor-pointer" id="dairy">Dairy</li>
-                <li class="px-5 pb-0.5 border-b-2 border-transparent cursor-pointer" id="featured">Featured</li>
-                <li class="px-5 pb-0.5 border-b-2 border-transparent cursor-pointer" id="horror">Horror</li>
-                <li class="px-5 pb-0.5 border-b-2 border-transparent cursor-pointer" id="mystery">Mystery-Thriller</li>
-                <li class="px-5 pb-0.5 border-b-2 border-transparent cursor-pointer" id="fiction">Non-Fiction</li>
+            <ul id="filter"
+                class="flex items-center justify-center w-full overflow-auto pt-10 pb-2 md:py-10 text-xl max-sm:text-sm/[17px]">
+                <li class="px-5 pb-0.5 min-w-fit border-b-2 border-transparent cursor-pointer active" id="series">Book
+                    Series</li>
+                <li class="px-5 pb-0.5 min-w-fit border-b-2 border-transparent cursor-pointer" id="cook">Cook Book</li>
+                <li class="px-5 pb-0.5 min-w-fit border-b-2 border-transparent cursor-pointer" id="dairy">Dairy</li>
+                <li class="px-5 pb-0.5 min-w-fit border-b-2 border-transparent cursor-pointer" id="featured">Featured
+                </li>
+                <li class="px-5 pb-0.5 min-w-fit border-b-2 border-transparent cursor-pointer" id="horror">Horror</li>
+                <li class="px-5 pb-0.5 min-w-fit border-b-2 border-transparent cursor-pointer" id="mystery">
+                    Mystery-Thriller</li>
+                <li class="px-5 pb-0.5 min-w-fit border-b-2 border-transparent cursor-pointer" id="fiction">Non-Fiction
+                </li>
             </ul>
-            <div id="portfolio" class="popup-gallery w-3/4 mx-auto grid grid-cols-3 gap-10 justify-items-center pb-10">
+            <div id="portfolio"
+                class="popup-gallery md:w-3/4 mx-auto grid md:grid-cols-3 gap-5 md:gap-10 justify-items-center pt-5 md:pt-0 pb-10">
                 <a href="assets/images/portfolio/Book Series/BSCover1.png" title="BSCover1"
                     class="series w-auto flex justify-center items-center">
                     <div class="overlay w-auto relative">
@@ -522,7 +536,7 @@
                 <ul class="flex flex-wrap md:flex-nowrap py-2 lg:py-0 lg:ml-3 uppercase">
                     <li
                         class="mx-1 py-0.5 md:px-4 rounded-lg opacity-75 border border-transparent md:hover:border-white hover:opacity-100 md:hover:bg-sky-600">
-                        <a href="paperback_formte.html">SERVICES</a>
+                        <a href="paperback_format.html">SERVICES</a>
                     </li>
                     <li
                         class="mx-1 py-0.5 md:px-4 rounded-lg opacity-75 border border-transparent md:hover:border-white hover:opacity-100 md:hover:bg-sky-600">

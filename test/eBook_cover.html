@@ -26,6 +26,14 @@
 </head>
 
 <body>
+    <!-- loader -->
+    <div class="lds-ripple fixed w-full h-full z-20 flex justify-center items-center bg-black opacity-80">
+        <span class="flex h-10 w-10 relative">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-10 w-10 bg-sky-500"></span>
+        </span>
+    </div>
+
     <nav class="bg-black w-full px-2 border-b">
         <ul class="text-white hidden md:flex justify-end items-center">
             <li class="group relative p-3 pr-0 ">
@@ -87,13 +95,13 @@
                     <div class="menu-icon md:hidden absolute top-1 right-2">
                         <i class="fa fa-xmark"></i>
                     </div>
-                    <ul class=" flex flex-col md:flex-row relative">
+                    <ul class="flex flex-col md:flex-row relative">
                         <li class="group relative mt-2 py-2 px-3  hover:bg-sky-500 hover:text-white md:mt-0 ">
-                            <a class="text-black" href="paperback_formte.html"> Services </a>
+                            <a class="text-black" href="./paperback_format.html"> Services </a>
                             <div class="group-hover:block top-9 absolute hidden h-auto flex z-10">
                                 <ul class="block bg-white shadow-xl text-black rounded w-max p-2">
                                     <li class="p-2 hover:bg-sky-400 hover:text-white">
-                                        <a href="./paperback_formte.html">
+                                        <a href="./paperback_format.html">
                                             <span>Paperback Formate</span>
                                         </a>
                                     </li>
@@ -112,7 +120,7 @@
                         </li>
                         <li
                             class="group relative py-2 px-3  hover:bg-sky-500 hover:text-white hover:text-white md:mt-0 ">
-                            <a class="text-black" href="paperback_cover.html"> Book Cover Design </a>
+                            <a class="text-black" href="./paperback_cover.html"> Book Cover Design </a>
                             <div class="group-hover:block top-9 absolute hidden h-auto flex z-10">
                                 <ul class="block bg-white shadow-xl text-black rounded w-max p-2">
                                     <li class="p-2 hover:bg-sky-400 hover:text-white">
@@ -138,25 +146,25 @@
                 </div>
             </div>
         </header>
-        <main class="-mt-[75px] pt-20 w-full scroll-smooth">
-            <div class="banner p-10 pb-0 lg:pr-0 flex lg:items-end">
+        <main class="-mt-[75px] pt-5 md:pt-20 lg:pt-24 w-full scroll-smooth">
+            <div class="banner px-5 py-10 md:p-10 pb-0 lg:pr-0 flex lg:items-end">
                 <div class="flex text-black">
-                    <div class="flex items-start pt-36 flex-col">
-                        <h2 class="text-4xl font-black py-5 tracking-wide">
+                    <div class="flex items-start pt-24 md:pt-36 flex-col">
+                        <h2 class="text-5xl font-poppinsbold py-5 tracking-wide max-lg:text-4xl max-md:text-3xl">
                             Beautiful eBook Cover Design
                         </h2>
                         <a href="priceTable.html"
-                            class="px-14 py-3.5 text-white bg-black mt-4 font-bold tracking-wide rounded-full uppercase hover:bg-sky-500 hover:text-white hover:shadow-sm transition duration-500">
+                            class="px-4 py-2 md:px-14 md:py-3.5 text-sm md:text-base text-white bg-black mt-4 font-bold tracking-wide rounded-full uppercase hover:bg-sky-500 hover:text-white hover:shadow-sm transition duration-500">
                             VIEW BOOK COVER DESIGN PRICES
                         </a>
-                        <div class="py-3.5 text-gray-500 text-base">
+                        <div class="py-3.5 text-gray-500 text-sm md:text-base">
                             View <a href="Portfolio.html" class="text-sky-500">Book Cover Design Portfolio</a>
                         </div>
                     </div>
                 </div>
             </div>
         </main>
-        <section class="py-10 px-28 text-dark bg-gray-100 ">
+        <section class="py-10 px-5 md:px-28 text-dark bg-gray-100 ">
             <div class="text-xl font-black py-3 tracking-wide">
                 Two Easy Steps toward your eBook Cover Design
             </div>
@@ -182,11 +190,11 @@
         </section>
 
         <!-- paperback cover design includes -->
-        <section class="servic_include py-10 px-28 text-black">
-            <div class="text-center text-4xl font-extrabold pb-16 tracking-wide">
+        <section class="servic_include py-10 px-5 md:px-28 text-black">
+            <div class="text-center text-xl md:text-4xl font-extrabold pb-10 md:pb-16 tracking-wide">
                 eBook Cover Design for Every Genre
             </div>
-            <div class="grid grid-cols-5 gap-5">
+            <div class="flex flex-col md:grid md:grid-cols-5 gap-5">
                 <img src="./assets/images/braydensdarkness_cover3.jpg" alt="braydensdarkness_cover3">
                 <img src="./assets/images/braydensdarkness_cover3.jpg" alt="braydensdarkness_cover3">
                 <img src="./assets/images/braydensdarkness_cover3.jpg" alt="braydensdarkness_cover3">
@@ -200,8 +208,8 @@
         </section>
 
         <!-- Paperback Cover process -->
-        <section class="py-10 px-28 bg-sky-500">
-            <div class="text-center text-4xl font-extrabold pb-5 tracking-wide text-white">
+        <section class="py-10 px-5 md:px-28 bg-sky-500">
+            <div class="text-center text-xl md:text-4xl font-extrabold pb-5 tracking-wide text-white">
                 Our Paperback Cover Design Process
             </div>
             <div class="lg:flex text-center text-white">
@@ -252,8 +260,8 @@
         </section>
 
         <!-- testimonials -->
-        <section class="flex items-center justify-center py-10 px-28 bg-gray-200 gap-10">
-            <div class="w-[352px]">
+        <section class="flex flex-col md:flex-row items-center justify-center py-10 px-5 md:px-28 bg-gray-200 gap-10">
+            <div class="md:w-[352px] order-2 md:order-none">
                 <div class="text-3xl py-3 font-poppinsbold tracking-wide">
                     Are you looking for a series design?
                 </div>
@@ -263,12 +271,13 @@
                     Get Started
                 </a>
             </div>
-            <img src="./assets/images/HomepageS_Design-2.png" alt="HomepageS_Design" class="w-[600px]">
+            <img src="./assets/images/HomepageS_Design-2.png" alt="HomepageS_Design"
+                class="w-[600px] order-1 md:order-none">>
         </section>
 
         <!-- PUBLISHING SITES -->
-        <section class="py-10 px-28 bg-gray-100">
-            <div class="text-center text-2xl font-extrabold pb-10 tracking-wide text-black">
+        <section class="py-10 px-5 md:px-28 bg-gray-100">
+            <div class="text-center text-xl md:text-2xl font-extrabold pb-10 tracking-wide text-black">
                 WE DESIGN COVERS FOR ALL MAJOR PUBLISHING SITES
             </div>
             <div class="flex justify-center items-center max-md:flex-col">
@@ -288,7 +297,7 @@
             <ul class="flex flex-wrap md:flex-nowrap py-2 lg:py-0 lg:ml-3 uppercase">
                 <li
                     class="mx-1 py-0.5 md:px-4 rounded-lg opacity-75 border border-transparent md:hover:border-white hover:opacity-100 md:hover:bg-sky-600">
-                    <a href="paperback_formte.html">SERVICES</a>
+                    <a href="paperback_format.html">SERVICES</a>
                 </li>
                 <li
                     class="mx-1 py-0.5 md:px-4 rounded-lg opacity-75 border border-transparent md:hover:border-white hover:opacity-100 md:hover:bg-sky-600">

@@ -12,12 +12,21 @@ nav {
   border-color: rgba(234, 237, 241, 0.2);
 }
 
+header {
+  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+}
+
 .inverted {
   background-color: transparent !important;
+  box-shadow: none;
 }
 
 .inverted .group {
   color: #fff !important;
+}
+
+.home .inverted .menu-icon {
+  color: #fff;
 }
 
 header.inverted .logo {
@@ -116,4 +125,9 @@ header .group:hover {
 
 #filter li.active {
   border-bottom-color: rgb(14 165 233);
+}
+
+.banner .owl-carousel .owl-stage {
+  display: flex;
+  align-items: end;
 }

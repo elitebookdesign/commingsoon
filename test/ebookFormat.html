@@ -26,6 +26,14 @@
 </head>
 
 <body>
+    <!-- loader -->
+    <div class="lds-ripple fixed w-full h-full z-20 flex justify-center items-center bg-black opacity-80">
+        <span class="flex h-10 w-10 relative">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-10 w-10 bg-sky-500"></span>
+        </span>
+    </div>
+
     <nav class="bg-black w-full px-2 border-b">
         <ul class="text-white hidden md:flex justify-end items-center">
             <li class="group relative p-3 pr-0 ">
@@ -89,11 +97,11 @@
                     </div>
                     <ul class="flex flex-col md:flex-row relative">
                         <li class="group relative mt-2 py-2 px-3  hover:bg-sky-500 hover:text-white md:mt-0 ">
-                            <a class="text-black" href="#"> Services </a>
+                            <a class="text-black" href="./paperback_format.html"> Services </a>
                             <div class="group-hover:block top-9 absolute hidden h-auto flex z-10">
                                 <ul class="block bg-white shadow-xl text-black rounded w-max p-2">
                                     <li class="p-2 hover:bg-sky-400 hover:text-white">
-                                        <a href="./paperback_formte.html">
+                                        <a href="./paperback_format.html">
                                             <span>Paperback Formate</span>
                                         </a>
                                     </li>
@@ -112,11 +120,11 @@
                         </li>
                         <li
                             class="group relative py-2 px-3  hover:bg-sky-500 hover:text-white hover:text-white md:mt-0 ">
-                            <a class="text-black" href="#"> Book Cover Design </a>
+                            <a class="text-black" href="./paperback_cover.html"> Book Cover Design </a>
                             <div class="group-hover:block top-9 absolute hidden h-auto flex z-10">
                                 <ul class="block bg-white shadow-xl text-black rounded w-max p-2">
                                     <li class="p-2 hover:bg-sky-400 hover:text-white">
-                                        <a href="paperback_cover.html">
+                                        <a href="./paperback_cover.html">
                                             <span>Paperback Cover Design</span>
                                         </a>
                                     </li>
@@ -138,30 +146,30 @@
                 </div>
             </div>
         </header>
-        <main class="-mt-[75px] pt-20 w-full scroll-smooth">
-            <div class="banner p-10 pb-0 lg:pr-0 flex lg:items-end">
+        <main class="-mt-[75px] pt-5 md:pt-20 lg:pt-24 w-full scroll-smooth">
+            <div class="banner px-5 py-10 md:p-10 pb-0 lg:pr-0 flex lg:items-end">
                 <div class="flex text-black">
-                    <div class="flex items-start pt-36 flex-col">
-                        <h2 class="text-5xl font-poppinsbold py-5 tracking-wide">
+                    <div class="flex items-start pt-24 md:pt-36 flex-col">
+                        <h2 class="text-5xl font-poppinsbold py-5 tracking-wide max-lg:text-4xl max-md:text-3xl">
                             eBook Distribution Service
                         </h2>
                         <p>
                             (Keep distribution simple!)
                         </p>
                         <a href="eliteForm.html"
-                            class="px-14 py-3.5 text-white bg-black mt-4 font-bold tracking-wide rounded-full uppercase hover:bg-sky-500 hover:text-white hover:shadow-sm transition duration-500">
+                            class="px-5 py-2 md:px-14 md:py-3.5 text-white bg-black mt-4 font-bold tracking-wide rounded-full uppercase hover:bg-sky-500 hover:text-white hover:shadow-sm transition duration-500">
                             CLICK HERE TO GET A QUOTE!
                         </a>
                     </div>
                 </div>
             </div>
         </main>
-        <section class="services py-10 px-28 lg:flex bg-white text-dark">
+        <section class="services py-10 px-5 md:px-28 lg:flex bg-white text-dark">
             <div class="w-full text-left md:flex-col lg:mb-0 grid-flow-col items-center">
                 <div class="w-full mb-3 lg:mb-10 flex-col md:items-center ">
                     <!-- <i class="fa-solid fa-print text-6xl pb-5 text-sky-500"></i> -->
                     <div
-                        class="text-xl text-left font-black py-3 tracking-wide underline underline-offset-8 decoration-gray-300">
+                        class="text-lg md:text-2xl text-left font-black py-3 tracking-wide underline underline-offset-8 decoration-gray-300">
                         What is eBook formatting?
                     </div>
                     <div class="text-justify text-gray-600 ">eBook formatting is the preparation of a digital file, to
@@ -171,22 +179,19 @@
                 <div class="w-full mb-3 lg:mb-0 flex-col md:items-center">
                     <!-- <i class="fa-solid fa-print text-6xl pb-5 text-sky-500"></i> -->
                     <div
-                        class="text-xl text-left font-black py-3 tracking-wide underline underline-offset-8 decoration-gray-300">
+                        class="text-lg md:text-2xl text-left font-black py-3 tracking-wide underline underline-offset-8 decoration-gray-300">
                         Who do we format books for?
                     </div>
                     <div class="text-justify text-gray-600">We format books for self-publishing authors and small
                         publishers. Our formatted books are prepared to upload, without issue, to Amazon Kindle Direct
                         Publishing, Kobo, Apple & IngramSpark and more.
-
                     </div>
                 </div>
             </div>
-
-
-            <div class="w-full flex justify-center items-center">
+            <div class="w-full flex justify-center items-center py-5 md:py-0">
                 <div class="relative">
                     <div class="books__book__img">
-                        <img src="assets/images/eBook_Icon_animation.png" class="mx-auto drop-shadow-3xl"
+                        <img src="assets/images/eBook_Icon_animation.png" class="w-40 md:w-auto mx-auto drop-shadow-xl"
                             alt="eBook_Icon_animation">
                     </div>
                 </div>
@@ -195,7 +200,7 @@
                 <div class="w-full mb-3 lg:mb-10 flex-col md:items-center">
                     <!-- <i class="fa fa-book-atlas text-6xl pb-5 text-sky-500"></i> -->
                     <div
-                        class="text-xl text-left font-black py-3 tracking-wide underline underline-offset-8 decoration-gray-300">
+                        class="text-lg md:text-2xl text-left font-black py-3 tracking-wide underline underline-offset-8 decoration-gray-300">
                         When can I expect my formatted file?
                     </div>
                     <div class="text-justify text-gray-600">We have some of the fastest turnaround times in the
@@ -205,7 +210,7 @@
                 <div class="w-full mb-3 lg:mb-0 flex-col md:items-center">
                     <!-- <i class="fa-solid  fa-pager text-6xl pb-5 text-sky-500"></i> -->
                     <div
-                        class="text-xl text-left font-black py-3 tracking-wide underline underline-offset-8 decoration-gray-300">
+                        class="text-lg md:text-2xl text-left font-black py-3 tracking-wide underline underline-offset-8 decoration-gray-300">
                         Why create a print version?
                     </div>
                     <div class="text-justify text-gray-600">
@@ -221,50 +226,32 @@
             </div>
         </section>
 
-        <div class="flex flex-col  font-poppinsbold p-10 text-center text-xl">
-            <h1 class="space-x-52">WE FORMAT FOR PRINT FOR THESE MAJOR PUBLISHING SITES</h1>
-            <span class="flex justify-center mt-5">
-                <img src="assets/images/ingramspark-logo.png" alt="kindle direct" width="200px" class="mx-10 h-14" />
-                <img src="assets/images/kindle direct.png" alt="ingramspark-logo" width="200px" class="mx-10 h-14" />
+        <div class="flex flex-col p-3 md:p-10 text-center ">
+            <h1 class="font-extrabold md:text-xl">WE FORMAT FOR PRINT FOR THESE MAJOR PUBLISHING SITES</h1>
+            <span class="flex justify-center gap-5 mt-5">
+                <img src="assets/images/ingramspark-logo.png" alt="kindle direct"
+                    class="md:mx-10 w-32 md:w-48 md:h-14" />
+                <img src="assets/images/kindle direct.png" alt="ingramspark-logo"
+                    class="md:mx-10 w-32 md:w-48 md:h-14" />
             </span>
         </div>
 
         <!-- why-choose -->
-        <section class="why-choose py-10 px-28 bg-black text-white">
-            <div class="text-center text-4xl font-poppinsbold pb-16 tracking-wide">
+        <section class="why-choose py-10 px-5 md:px-28 bg-black text-white">
+            <div class="text-center text-xl md:text-4xl font-poppinsbold md:pb-16 tracking-wide">
                 Why Choose Us to Format Your Print Book?
             </div>
-            <!-- <div class="text-xl tracking-wide">
-                <div class="w-full flex">
-                    <div class="w-1/2">
-                        <span class="text-gray-500"> EACH BOOK IS </span>PERSONALLY FORMATTED AND CAREFULLY REVIEWED
-                    </div>
-                    <div class="w-1/2">
-                        FAST AND THOROUGH SERVICE <span class="text-gray-500">(WITH 6 DAY RUSH OPTION AVAILABLE)</span>
-                    </div>
-                </div>
-                <hr class="my-10 border-slate-800">
-                <div class="w-full flex">
-                    <div class="w-1/2">
-                        <span class="text-gray-500">WE OFFER THE</span> BEST VALUE <span class="text-gray-500">FOR
-                            SERVICE AND FINAL
-                            PRODUCT</span>
-                    </div>
-                    <div class="w-1/2">
-                        <span class="text-gray-500">KEEP 100% OF YOUR PROFITS! WE TAKE</span> NO ROYALTIES
-                    </div>
-                </div>
-            </div> -->
             <div class="w-full flex flex-col items-center">
-                <div class="w-3/4 text-2xl flex justify-center py-5" style="border-bottom: 2px solid gray;">
-                    <div class="mx-5">
+                <div class="md:w-3/4 text-lg md:text-2xl md:flex justify-center py-5"
+                    style="border-bottom: 2px solid gray;">
+                    <div class="my-5 md:my-0 md:mx-5">
                         <span><span class="text-gray-500">TRUSTED BY</span> THOUSANS
                             <div>OF INDEPENDENT</div>
                             <div> AUTHORS AND</div>
                             <div>PUBLISHERS SINCE 2011</div>
                         </span>
                     </div>
-                    <div class="mx-5">
+                    <div class="my-5 md:my-0 md:mx-5">
                         <span>
                             <div class="text-gray-500">EACH BOOK IS</div>
                             <div>PERSONALLY FORMATED</div>
@@ -272,7 +259,7 @@
                             <div class="text-gray-500">REWVIEWED</div>
                         </span>
                     </div>
-                    <div class="mx-5">
+                    <div class="my-5 md:my-0 md:mx-5">
                         <span>
                             <div>FRIENDLY, EFFICIENT</div>
                             <div class="text-gray-500">COMMUNICATION FORM</div>
@@ -281,8 +268,8 @@
                     </div>
                 </div>
 
-                <div class="w-3/4 text-2xl flex justify-center py-5">
-                    <div class="mx-5">
+                <div class="md:w-3/4 text-lg md:text-2xl md:flex justify-center py-5">
+                    <div class="my-5 md:my-0 md:mx-5">
                         <span>
                             <div>FAST AND THROUGH</div>
                             <div class="text-gray-500">SERVICE ( WITH 6 DAY</div>
@@ -290,14 +277,14 @@
                             <div class="text-gray-500">AVAILABLE )</div>
                         </span>
                     </div>
-                    <div class="mx-5">
+                    <div class="my-5 md:my-0 md:mx-5">
                         <span>
                             <div><span class="text-gray-500">WE OFFER THE BEST</span> VALUE</div>
                             <div class="text-gray-500">FOR SERVICE AND FINAL</div>
                             <div class="text-gray-500">PRODUCT</div>
                         </span>
                     </div>
-                    <div class="mx-5">
+                    <div class="my-5 md:my-0 md:mx-5">
                         <span>
                             <div class="text-gray-500">KEEP 100% OF OUR</div>
                             <div class="text-gray-500"><span>PROFITS! WE TAKE</span> NO</div>
@@ -313,38 +300,39 @@
         </section>
 
         <!-- service includes -->
-        <section class="servic_include py-10 px-28 bg-white text-black">
-            <div class="text-center text-4xl font-poppinsbold pb-16 tracking-wide">
+        <section class="servic_include py-10 px-5 md:px-28 bg-white text-black">
+            <div class="text-center text-xl md:text-4xl font-poppinsbold md:pb-16 tracking-wide">
                 Our Print Book Formatting Service Includes:
             </div>
-            <ul class="grid grid-cols-3 gap-4 text-lg relative">
-                <li class="text-justify mx-5"> Print ready PDF file guaranteed to be approved by
+            <ul class="md:grid md:grid-cols-3 gap-4 text-lg relative md:text-justify pt-5 md:pt-0">
+                <li class="my-5 md:my-0 md:mx-5"> Print ready PDF file guaranteed to be approved by
                     KDP
                     Print and
                     IngramSpark.</li>
-                <li class="text-justify mx-5"> Prompt, direct communication with our
+                <li class="my-5 md:my-0 md:mx-5"> Prompt, direct communication with our
                     professional
                     formatters.</li>
-                <li class="text-justify mx-5"> Turnaround time within 14 days (6 days for rush
+                <li class="my-5 md:my-0 md:mx-5"> Turnaround time within 14 days (6 days for rush
                     jobs).
                 </li>
-                <li class="text-justify mx-5"> Appropriate front matter (e.g. title and
+                <li class="my-5 md:my-0 md:mx-5"> Appropriate front matter (e.g. title and
                     copyright
                     page)</li>
-                <li class="text-justify mx-5"> Footnotes or end notes as required.</li>
-                <li class="text-justify mx-5"> For a complete list of what our print service
+                <li class="my-5 md:my-0 md:mx-5"> Footnotes or end notes as required.</li>
+                <li class="my-5 md:my-0 md:mx-5"> For a complete list of what our print service
                     includes, click here
                 </li>
-                <li class="text-justify mx-5"> A table of contents with page numbers upon
+                <li class="my-5 md:my-0 md:mx-5"> A table of contents with page numbers upon
                     request
                 </li>
-                <li class="text-justify mx-5"> Thorough post-formatting file review and check.
+                <li class="my-5 md:my-0 md:mx-5"> Thorough post-formatting file review and check.
                 </li>
             </ul>
         </section>
+
         <!-- print book process -->
-        <section class="py-10 px-28 bg-sky-500">
-            <div class="text-center text-4xl font-poppinsbold pb-5 tracking-wide text-white">
+        <section class="py-10 px-5 md:px-28 bg-sky-500">
+            <div class="text-center text-xl md:text-4xl font-poppinsbold pb-5 tracking-wide text-white">
                 Our Print Book Formatting Process
             </div>
             <div class="lg:flex text-center text-white">
@@ -354,8 +342,8 @@
                         <div class="text-black my-3 text-2xl font-black">Step 1</div>
                         <div class="my-3 font-bold">FILL OUT QUOTE FORM</div>
                         <p class="text-base text-gray-600">Request a quote for print book formatting by clicking the
-                            button below, and
-                            filling out
+                            button below,
+                            and filling out
                             our form</p>
                     </div>
                 </div>
@@ -365,8 +353,8 @@
                         <div class="text-black my-3 text-2xl font-black">Step 2</div>
                         <div class="my-3 font-bold">ACCEPT QUOTE</div>
                         <p class="text-base text-gray-600">Once you’ve sent in your request, we’ll email a quote for you
-                            to review and
-                            accept.</p>
+                            to review
+                            and accept.</p>
                     </div>
                 </div>
                 <div class="w-full lg:w-1/4 p-5 my-3 lg:my-0 lg:mx-3 flex flex-col items-center ">
@@ -400,19 +388,23 @@
         </section>
 
         <!-- PUBLISHING SITES -->
-        <section class="p-5 bg-gray-200 flex justify-center items-center">
+        <section class="p-5 bg-gray-200 md:flex justify-center items-center">
             <!-- <img src="assets/images/kindle direct.png" alt="kindle direct" width="200px" class="mx-10">
             <img src="assets/images/ingramspark-logo.png" alt="ingramspark-logo" width="200px" class="mx-10"> -->
-            <img src="assets/images/kindle direct.png" alt="kindle direct" width="200px" class="mx-10">
-            <img src="assets/images/Amazon-Kindle-Logo.png" alt="amazon_kindle logo" width="200px" class="mx-10" />
-            <img src="assets/images/ingramspark-logo.png" alt="ingramspark-logo" width="200px" class="mx-10">
-            <img src="assets/images/kobo_writing_life.png" alt="kobo logo" width="200px" class="mx-10" />
+            <img src="assets/images/kindle direct.png" alt="kindle direct" width="200px"
+                class="my-2.5 md:my-0 mx-auto md:mx-10">
+            <img src="assets/images/Amazon-Kindle-Logo.png" alt="amazon_kindle logo" width="200px"
+                class="my-2.5 md:my-0 mx-auto md:mx-10" />
+            <img src="assets/images/ingramspark-logo.png" alt="ingramspark-logo" width="200px"
+                class="my-2.5 md:my-0 mx-auto md:mx-10">
+            <img src="assets/images/kobo_writing_life.png" alt="kobo logo" width="200px"
+                class="my-2.5 md:my-0 mx-auto md:mx-10" />
         </section>
 
 
         <!-- testimonials -->
-        <section class="testimonials py-10 px-28 bg-gray-200">
-            <div class="text-center text-4xl font-extrabold pb-5 tracking-wide">
+        <section class="testimonials py-10 px-5 md:px-28 bg-gray-200">
+            <div class="text-center text-xl md:text-5xl font-extrabold pb-5 tracking-wide">
                 Authors Love Us
             </div>
             <div class="owl-carousel owl-theme">
@@ -436,13 +428,14 @@
                 </div>
             </div>
         </section>
+
         <!-- footer -->
         <footer class="py-5 px-10 bg-black text-white lg:flex items-center">
             <span class="opacity-75">&copy; 2023 EliteeBookDesign All Rights Reserved</span>
             <ul class="flex flex-wrap md:flex-nowrap py-2 lg:py-0 lg:ml-3 uppercase">
                 <li
                     class="mx-1 py-0.5 md:px-4 rounded-lg opacity-75 border border-transparent md:hover:border-white hover:opacity-100 md:hover:bg-sky-600">
-                    <a href="paperback_formte.html">SERVICES</a>
+                    <a href="paperback_format.html">SERVICES</a>
                 </li>
                 <li
                     class="mx-1 py-0.5 md:px-4 rounded-lg opacity-75 border border-transparent md:hover:border-white hover:opacity-100 md:hover:bg-sky-600">

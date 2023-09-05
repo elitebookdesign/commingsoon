@@ -34,10 +34,17 @@
     position: fixed !important;
   }
 
-  .paperbackFormat main {
+  .paperbackFormat main,
+  .ebookFormat main,
+  .brochure main {
     background-image: none;
     background-size: 0;
     height: auto;
+  }
+
+  .home .owl-carousel .item {
+    width: inherit;
+    display: block;
   }
 }
 

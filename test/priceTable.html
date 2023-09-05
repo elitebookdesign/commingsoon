@@ -26,6 +26,14 @@
 </head>
 
 <body>
+    <!-- loader -->
+    <div class="lds-ripple fixed w-full h-full z-20 flex justify-center items-center bg-black opacity-80">
+        <span class="flex h-10 w-10 relative">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-10 w-10 bg-sky-500"></span>
+        </span>
+    </div>
+
     <nav class="bg-black w-full px-2 border-b">
         <ul class="text-white hidden md:flex justify-end items-center">
             <li class="group relative p-3 pr-0 ">
@@ -89,11 +97,11 @@
                     </div>
                     <ul class="flex flex-col md:flex-row relative">
                         <li class="group relative mt-2 py-2 px-3  hover:bg-sky-500 hover:text-white md:mt-0 ">
-                            <a class="text-black" href="#"> Services </a>
+                            <a class="text-black" href="./paperback_format.html"> Services </a>
                             <div class="group-hover:block top-9 absolute hidden h-auto flex z-10">
                                 <ul class="block bg-white shadow-xl text-black rounded w-max p-2">
                                     <li class="p-2 hover:bg-sky-400 hover:text-white">
-                                        <a href="./paperback_formte.html">
+                                        <a href="./paperback_format.html">
                                             <span>Paperback Formate</span>
                                         </a>
                                     </li>
@@ -112,7 +120,7 @@
                         </li>
                         <li
                             class="group relative py-2 px-3  hover:bg-sky-500 hover:text-white hover:text-white md:mt-0 ">
-                            <a class="text-black" href="#"> Book Cover Design </a>
+                            <a class="text-black" href="./paperback_cover.html"> Book Cover Design </a>
                             <div class="group-hover:block top-9 absolute hidden h-auto flex z-10">
                                 <ul class="block bg-white shadow-xl text-black rounded w-max p-2">
                                     <li class="p-2 hover:bg-sky-400 hover:text-white">
@@ -138,17 +146,17 @@
                 </div>
             </div>
         </header>
-        <main class="-mt-[75px] py-20 w-full scroll-smooth bg-white">
-            <div class="text-center text-3xl font-poppinsbold p-10 tracking-wide">
+        <main class="-mt-[75px] pt-36 pb-10 md:pt-24 w-full scroll-smooth bg-white">
+            <h2 class="text-xl md:text-4xl text-center pb-10 font-poppinsbold tracking-wide">
                 You’ll Love Working With eBook Launch
-            </div>
-            <div class="flex justify-center gap-4">
-                <div class="w-[540px] border pb-10 hover:shadow-lg">
-                    <img src="/assets/images/eBook Mockup.png" alt="eBook mockup">
-                    <div class="text-center text-2xl font-poppinsbold pt-10 tracking-wide">
+            </h2>
+            <div class="flex flex-col md:flex-row justify-center px-5 md:px-0 gap-4">
+                <div class="md:w-[540px] border pb-10 hover:shadow-lg">
+                    <img src="./assets/images/eBook Mockup.png" alt="eBook mockup">
+                    <div class="text-center text-xl md:text-2xl font-poppinsbold pt-10 tracking-wide">
                         Custom eBook Cover Design
                     </div>
-                    <div class="text-center text-5xl py-5 font-poppinsbold tracking-wide">
+                    <div class="text-center text-3xl md:text-5xl py-5 font-poppinsbold tracking-wide">
                         $29
                     </div>
                     <ul class="text-center px-10">
@@ -161,16 +169,16 @@
                         <li class="py-4">Keep all rights and profit (no royalties)</li>
                     </ul>
                     <a href="./eliteForm.html"
-                        class="px-14 py-3.5 block w-max mx-auto text-white bg-black mt-14 font-bold tracking-wide rounded-full uppercase hover:bg-sky-500 hover:text-white hover:shadow-sm transition duration-500">
+                        class="px-5 py-2 md:px-14 md:py-3.5 text-sm md:text-base block w-max mx-auto text-white bg-black mt-14 font-bold tracking-wide rounded-full uppercase hover:bg-sky-500 hover:text-white hover:shadow-sm transition duration-500">
                         Request Free eBook Sample
                     </a>
                 </div>
-                <div class="w-[540px] border pb-10 hover:shadow-lg">
-                    <img src="/assets/images/Paperback Mockup.png" alt="Paperback mockup">
-                    <div class="text-center text-2xl font-poppinsbold pt-10 tracking-wide">
+                <div class="md:w-[540px] border pb-10 hover:shadow-lg">
+                    <img src="./assets/images/Paperback Mockup.png" alt="Paperback mockup">
+                    <div class="text-center text-xl md:text-2xl font-poppinsbold pt-10 tracking-wide">
                         Custom Print Cover Design
                     </div>
-                    <div class="text-center text-5xl py-5 font-poppinsbold tracking-wide">
+                    <div class="text-center text-3xl md:text-5xl py-5 font-poppinsbold tracking-wide">
                         $49
                     </div>
                     <ul class="text-center px-10">
@@ -183,7 +191,7 @@
                         <li class="py-4">One high resolution, print-ready file for paperback (300 DPI)</li>
                     </ul>
                     <a href="./eliteForm.html"
-                        class="px-14 py-3.5 block w-max mx-auto text-white bg-black mt-14 font-bold tracking-wide rounded-full uppercase hover:bg-sky-500 hover:text-white hover:shadow-sm transition duration-500">
+                        class="px-5 py-2 md:px-14 md:py-3.5 text-sm md:text-base block w-max mx-auto text-white bg-black mt-14 font-bold tracking-wide rounded-full uppercase hover:bg-sky-500 hover:text-white hover:shadow-sm transition duration-500">
                         Request Free eBook Sample
                     </a>
                 </div>
@@ -195,7 +203,7 @@
             <ul class="flex flex-wrap md:flex-nowrap py-2 lg:py-0 lg:ml-3 uppercase">
                 <li
                     class="mx-1 py-0.5 md:px-4 rounded-lg opacity-75 border border-transparent md:hover:border-white hover:opacity-100 md:hover:bg-sky-600">
-                    <a href="paperback_formte.html">SERVICES</a>
+                    <a href="paperback_format.html">SERVICES</a>
                 </li>
                 <li
                     class="mx-1 py-0.5 md:px-4 rounded-lg opacity-75 border border-transparent md:hover:border-white hover:opacity-100 md:hover:bg-sky-600">
