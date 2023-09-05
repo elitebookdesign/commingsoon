@@ -136,6 +136,6 @@ header .group:hover {
   align-items: end;
 }
 
-.ThHDze .DE3NNc {
-  display: none;
+.contact main {
+  min-height: calc(100vh - 121px);
 }
