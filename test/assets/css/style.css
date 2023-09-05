@@ -29,6 +29,10 @@ header {
   color: #fff;
 }
 
+.home .close {
+  color: #000 !important;
+}
+
 header.inverted .logo {
   display: none;
 }
